@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hazte socio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Petinder es un organización que fomenta la adopción de perros y gatos">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+</head>
+
+<body class="page-join">
+    <header>
+        <nav class="container">
+            <a class="link-logo" href="index.html">
+                <img class="logo" src="images/logo.svg" alt="Logo Petinder">
+            </a>
+            <ul class="menu-links">
+                <li><a href="about.html">Sobre Petinder</a></li>
+                <li><a href="tshirt.html">Camiseta</a></li>
+                <li class="active"><a href="">Hazte socio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Házte socio</h1>
+            <p>
+                Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a
+                nuestros amigos peludos. Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que se
+                añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros:
+            </p>
+            <div class="formulario">
+                <form id="contact-form" action="" method="post">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <ul>
+                            <li>
+                                <label class="form-label is-required" for="nombre">Nombre</label>
+                                <br>
+                                <input class="form-input" type="text" name="nombre" id="nombre" placeholder="Nombre"
+                                    pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-]{2,48}"
+                                    title="Nombre" value="" required/>
+                            </li>
+                            <li>
+                                <label class="form-label is-required" for="apellidos">Apellidos</label>
+                                <br>
+                                <input class="form-input" type="text" name="apellidos" id="apellidos"
+                                    placeholder="Apellidos"
+                                    pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-]{2,48}"
+                                    title="Apellidos" value="" required />
+                            </li>
+                            <li>
+                                <label class="form-label is-required" for="email">Correo electrónico</label>
+                                <br>
+                                <input class="form-input" type="email" name="email" id="email"
+                                    placeholder="Correo electrónico"
+                                    pattern="[a-zA-Z0-9]([^ @&%$\\\/()=?¿!.,:;]?|\d?)+[a-zA-Z0-9][\.]{1,2}"
+                                    title="Correo electrónico" value="" required />
+                            </li>
+                            <li>
+                                <label class="form-label is-required" for="dni">DNI</label>
+                                <br>
+                                <input class="form-input" type="text" name="dni" id="dni" placeholder="DNI"
+                                    pattern="[0-9]{8}[A-Za-z]{1}" title="DNI" value="" required />
+                            </li>
+                            <li>
+                                <label class="form-label" for="nacimiento">Fecha de nacimiento</label>
+                                <br>
+                                <input class="form-input" type="text" name="nacimiento" id="nacimiento"
+                                    placeholder="dd/mm/aaaa"
+                                    pattern="^(?:0?[1-9]|1[1-2])([/])(3[01]|[12][0-9]|0?[1-9])\1\d{4}$"
+                                    title="Fecha de nacimiento" value="" />
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dirección</legend>
+                        <ul>
+                            <li>
+                                <label class="form-label is-required" for="calle">Calle y número</label>
+                                <br>
+                                <input class="form-input" type="text" name="calle" id="calle"
+                                    placeholder="Calle y número"
+                                    pattern="[a-zA-Z1-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-º]{2,48}"
+                                    title="Calle y número" value="" />
+                            </li>
+                            <li>
+                                <label class="form-label is-required" for="ciudad">Ciudad</label>
+                                <br>
+                                <input class="form-input" type="text" name="ciudad" id="ciudad" placeholder="Ciudad"
+                                    pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-]{2,48}"
+                                    title="Ciudad" value="" required />
+                            </li>
+                            <li>
+                                <label class="form-label is-required" for="provincia">Provincia</label>
+                                <br>
+                                <input class="form-input" type="text" name="provincia" id="provincia"
+                                    placeholder="Provincia"
+                                    pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-]{2,48}"
+                                    title="Provincia" value="" required />
+                            </li>
+                            <li>
+                                <label class="form-label is-required" for="postal">Código postal</label>
+                                <br>
+                                <input class="form-input" type="text" name="postal" id="postal"
+                                    placeholder="Código postal" pattern="[0-9]{5}" title="Código postal" value=""
+                                    required />
+                            </li>
+                            <li>
+                                <label class="form-label" for="pais">País</label>
+                                <br>
+                                <select class="form-select" name="pais" id="pais">
+                                    <option disabled selected>Seleccionar</option>
+                                    <option value="Alemania">Alemania</option>
+                                    <option value="Espana">España</option>
+                                    <option value="Francia">Francia</option>
+                                    <option value="Italia">Italia</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de pago y camiseta</legend>
+                        <ul>
+                            <li>
+                                <label class="form-label-check" for="pago">Método de pago</label>
+                                <br>
+                                <input type="radio" id="transferencia" name="pago" value="transferencia" checked="checked">
+                                <label class="form-label" for="transferencia">Transferencia</label>
+                                <input class="form-radio" type="radio" id="tarjeta" name="pago" value="tarjeta">
+                                <label class="form-label" for="tarjeta">Tarjeta de crédito</label>
+                                <input class="form-radio" type="radio" id="paypal" name="pago" value="paypal">
+                                <label class="form-label" for="paypal">Paypal</label>
+                                <br>
+                            </li>
+                            <li>
+                                <label class="form-label-check" for="camiseta">Camiseta</label>
+                                <br>
+                                <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.</p>
+                                <label class="form-label" for="talla">Talla camiseta</label>
+                                <br>
+                                <select class="form-select-talla" name="talla" id="talla">
+                                    <option disabled selected>No quiero camiseta</option>
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <p class="text-obligatorio">* Todos los campos marcados son obligatorios</p>
+                    <input id="check" type="checkbox" required>
+                    <a>He leído y acepto la política de privacidad y las condiciones de uso</a>
+                    <br>
+                    <input class="form-button" type="submit" value="Enviar">
+                </form>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span>2024 © Petinder - Eduardo Hierro Pastor</span>
+            <ul class="legal-links">
+                <li><a href="">Términos y condiciones de uso</a></li>
+                <li><a href="">Política de privacidad</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
